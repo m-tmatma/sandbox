@@ -6,6 +6,9 @@ environment:
     - SONAR_QUBE: Yes
       my_variable:
         secure: 67KUU0QleOjNVnNjKF6NYA==
+        
+      only:
+        - configuration: Debug
 
     # second group
     - SONAR_QUBE: No
