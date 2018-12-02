@@ -3,13 +3,12 @@ image: Visual Studio 2017
 
 environment:
   matrix:
-    # first group
-    - accountname: sakuraeditor
+    - SONAR_QUBE: Yes
       my_variable:
         secure: 67KUU0QleOjNVnNjKF6NYA==
 
     # second group
-    - accountname: m-tmatma
+    - SONAR_QUBE: No
       my_variable:
         secure: 67KUU0QleOjNVnNjKF6NYA==
 
