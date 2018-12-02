@@ -1,6 +1,10 @@
 version: 1.0.{build}
 image: Visual Studio 2017
 
+environment:
+  my_variable:
+    secure: 67KUU0QleOjNVnNjKF6NYA==
+
 configuration:
   - Release
   - Debug
@@ -14,3 +18,5 @@ build_script:
     echo PLATFORM        %PLATFORM%
 
     echo CONFIGURATION   %CONFIGURATION%
+    
+    echo my_variable     %my_variable%
