@@ -2,8 +2,16 @@ version: 1.0.{build}
 image: Visual Studio 2017
 
 environment:
-  my_variable:
-    secure: 67KUU0QleOjNVnNjKF6NYA==
+  matrix:
+    # first group
+    - accountname: sakuraeditor
+      my_variable:
+        secure: 67KUU0QleOjNVnNjKF6NYA==
+
+    # second group
+    - accountname: m-tmatma
+      my_variable:
+        secure: 67KUU0QleOjNVnNjKF6NYA==
 
 configuration:
   - Release
