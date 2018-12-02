@@ -4,13 +4,9 @@ image: Visual Studio 2017
 environment:
   matrix:
     - SONAR_QUBE: Yes
-      my_variable:
-        secure: 67KUU0QleOjNVnNjKF6NYA==
 
     # second group
     - SONAR_QUBE: No
-      my_variable:
-        secure: 67KUU0QleOjNVnNjKF6NYA==
 
 matrix:
   exclude:
