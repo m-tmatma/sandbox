@@ -13,6 +13,9 @@ matrix:
     - configuration: Release
       SONAR_QUBE: Yes
 
+    - platform: MinGW
+      SONAR_QUBE: Yes
+
 configuration:
   - Release
   - Debug
@@ -20,6 +23,7 @@ configuration:
 platform:
   - Win32
   - x64
+  - MinGW
 
 build_script:
 - cmd: >-
