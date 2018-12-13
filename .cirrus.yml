@@ -6,9 +6,9 @@ windows_container:
 init_task:
   test_script: set
 
-check7z_task:
-  test_script: where 7z
+#check7z_task:
+#  test_script: where 7z
 
 checkVS2017_task:
   test_script:
-     dir "%ProgramFiles(x86)%\Microsoft Visual Studio"
+     dir "%ProgramFiles(x86)%"
