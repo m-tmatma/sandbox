@@ -8,8 +8,7 @@ init_task:
 
 checkVS2017_task:
   test_script:
-     dir "%ProgramFiles(x86)%\Microsoft Visual Studio\2017"
-     dir "%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin"
+     dir "%ProgramFiles(x86)%\Microsoft Visual Studio"
 
 check7z_task:
   test_script: where 7z
