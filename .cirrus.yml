@@ -1,0 +1,7 @@
+windows_container:
+  image: cirrusci/windowsservercore:2016
+  cpu: 4
+  memory: 12
+
+init_task:
+  test_script: set
