@@ -1,5 +1,10 @@
 version: 1.0.{build}
-image: Visual Studio 2017
+environment:
+  matrix:
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      VS_VERSION: 2017
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019 Preview
+      VS_VERSION: 2019
 
 environment:
   SECURE_VAR1:
@@ -10,7 +15,6 @@ environment:
 
 configuration:
   - Release
-  - Debug
 
 platform:
   - Win32
@@ -25,3 +29,6 @@ build_script:
     if not defined SECURE_VAR1 echo SECURE_VAR1 is not defined
 
     if not defined SECURE_VAR2 echo SECURE_VAR2 is not defined
+    
+    python find-exe.py
+
