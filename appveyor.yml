@@ -31,3 +31,5 @@ build_script:
     
     python find-exe.py
 
+artifacts:
+- path: files.txt
