@@ -6,7 +6,6 @@ environment:
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019 Preview
       VS_VERSION: 2019
 
-environment:
   SECURE_VAR1:
     secure: u13nxV7AxZi6gDlC2qRcFw==
 
