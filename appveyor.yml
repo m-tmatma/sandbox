@@ -29,4 +29,4 @@ build_script:
 
     if not defined SECURE_VAR2 echo SECURE_VAR2 is not defined
     
-    "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.Component.MSBuild -property installationPath
+    "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -prerelease -products * -requires Microsoft.Component.MSBuild -property installationPath
